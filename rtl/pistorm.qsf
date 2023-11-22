@@ -38,7 +38,7 @@
 
 
 set_global_assignment -name FAMILY "MAX II"
-set_global_assignment -name DEVICE EPM570T100C5
+set_global_assignment -name DEVICE EPM240T100C5
 set_global_assignment -name TOP_LEVEL_ENTITY pistorm
 set_global_assignment -name ORIGINAL_QUARTUS_VERSION 20.1.1
 set_global_assignment -name PROJECT_CREATION_TIME_DATE "12:34:25  DECEMBER 20, 2020"
@@ -112,7 +112,6 @@ set_location_assignment PIN_75 -to M68K_RW
 set_location_assignment PIN_76 -to M68K_DTACK_n
 set_location_assignment PIN_51 -to CLK_SEL
 set_location_assignment PIN_99 -to M68K_C1
-set_location_assignment PIN_100 -to M68K_C3
 
 set_instance_assignment -name WEAK_PULL_UP_RESISTOR ON -to M68K_IPL_n[0]
 set_instance_assignment -name WEAK_PULL_UP_RESISTOR ON -to M68K_IPL_n[1]
@@ -130,3 +129,4 @@ set_global_assignment -name SDC_FILE pistorm.sdc
 set_global_assignment -name VERILOG_FILE pistorm.v
 set_global_assignment -name TIMING_ANALYZER_MULTICORNER_ANALYSIS ON
 set_global_assignment -name NUM_PARALLEL_PROCESSORS ALL
+set_location_assignment PIN_100 -to DEBUG
